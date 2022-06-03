@@ -73,13 +73,4 @@ func main() {
 		log.Fatalln("Can't unmarshal to json", err)
 	}
 	fmt.Printf("struct -> %v\n", readEmployee)
-
-	// 構造体に戻す -> 出来そう？
-	// readEmployee = &pb.Employee{}
-	// if err := protojson.Unmarshal(out, readEmployee); err != nil {
-	// 	log.Fatalln("Can't unmarshal to json", err)
-	// }
-
-	// fmt.Printf("struct -> %v\n", readEmployee)
-
 }
